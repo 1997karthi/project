@@ -17,7 +17,7 @@
             <hr>
         </div>
     @endforeach
-   <input type = "hidden" value = "{{$blog->id}}" id = "blogId" />
+    <input type = "hidden" value = "{{$blog->id}}" id = "blogId" />
     @csrf
     <form id="commentForm">
         <div class="form-group">

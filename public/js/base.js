@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    //blog list pagination
+    $('#blogList').DataTable();
+    //comment add blog
     $('.comment-submit').on('click', function() {
         var author_name = $('#author_name').val();
         var content = $('#content').val();
@@ -16,6 +19,7 @@ $(document).ready(function() {
             }
         });
     });
+    //create new blog
     $('.add-blog').on('click', function() {
         var blogTitle = $('#blog-title').val();
         var authorName = $('#author-name').val();
@@ -46,6 +50,8 @@ $(document).ready(function() {
             });
         }
     });
+
+    //create new bulk blog
     $('.add-csv-blog').on('click', function() {
         var fileInput = $('#csv_file')[0];
         if (fileInput.files.length > 0) {
@@ -75,6 +81,7 @@ $(document).ready(function() {
             alertify.error('No file selected');
         }
     });
+    //delete bulk blog
     $('.delete-blog').on('click', function() {
         var blogId = $(this).data('id');
         alertify.confirm("Did you want to delete the blog?",
@@ -104,6 +111,7 @@ $(document).ready(function() {
             }
         });
     }
+    //edit bulk blog
     $('.edit-blog').on('click', function() {
         var blogTitle = $('#blog-title').val();
         var authorName = $('#author-name').val();
@@ -136,6 +144,7 @@ $(document).ready(function() {
             });
         }
     });
+    //seacrh blog
     $('#search-input').on('input', function() {
         var searchTerm = $(this).val().toLowerCase();
         $('.blog-item').each(function() {

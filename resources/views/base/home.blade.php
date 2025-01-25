@@ -1,12 +1,14 @@
+<!-- This is a header -->
 @extends('base')
 
 @section('header')
     @include('base.header')
 @endsection
-
+<!-- This is a home page -->
 @section('content')
 <div class="container">
     <div class="row mb-4">
+<!-- This is a search blog -->
         <div class="col-md-12">
             <input type="text" id="search-input" class="form-control" placeholder="Search blogs by title">
         </div>
@@ -34,6 +36,7 @@
 </div>
 
 @endsection
+<!-- This is a footer -->
 @section('footer')
     @include('base.footer')
 @endsection

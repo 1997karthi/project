@@ -8,7 +8,7 @@
     <div class="container">
         <h2 class="my-4">Responsive Table Example</h2>
         <div class="table-responsive">
-            <table class="table table-bordered table-striped">
+            <table id = "blogList"class="table table-bordered table-striped">
                 <thead>
                     <tr>
                         <th>#</th>
