@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="container">
-        <h2 class="my-4">Responsive Table Example</h2>
+        <h2 class="my-4">Blog Lists</h2>
         <div class="table-responsive">
             <table id = "blogList"class="table table-bordered table-striped">
                 <thead>
